@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using Izyplay.SliceItAll.Scores;
 
 namespace Izyplay.SliceItAll.UI
 {

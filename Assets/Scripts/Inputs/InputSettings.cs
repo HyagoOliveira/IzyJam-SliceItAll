@@ -8,9 +8,9 @@ namespace Izyplay.SliceItAll.Inputs
     public sealed class InputSettings : ScriptableObject
     {
         /// <summary>
-        /// Action fired when the Player touches the Screen.
+        /// Action fired when a touch is made on the Screen, not been done on any UI Element.
         /// </summary>
-        public event Action OnTouched;
+        public event Action OnScreenTouched;
 
         internal void Update()
         {
@@ -19,7 +19,7 @@ namespace Izyplay.SliceItAll.Inputs
                 HasKeyboardInput() ||
                 HasScreenTouchInput();
 
-            if (hasTouched) OnTouched?.Invoke();
+            if (hasTouched) OnScreenTouched?.Invoke();
         }
 
         private bool HasMouseInput()

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 791494593134164064}
   - component: {fileID: 791494593134164079}
   - component: {fileID: 791494593134164065}
+  - component: {fileID: 7776522685832927871}
   m_Layer: 8
   m_Name: BaseSliceableItem
   m_TagString: Untagged
@@ -60,3 +61,17 @@ MonoBehaviour:
   boxCollider: {fileID: 791494593134164079}
   whole: {fileID: 0}
   sliced: {fileID: 0}
+--- !u!114 &7776522685832927871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791494593134164078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d607af7ea65d14d813f11954f70e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 533f19cd7cd32244abb1f03502556dca, type: 2}
+  score: 10.5

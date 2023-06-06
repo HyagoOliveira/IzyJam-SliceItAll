@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f7555d7494dbfe4dad6b10fc424d8a5, type: 3}
   m_Name: LevelSettings
   m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: 533f19cd7cd32244abb1f03502556dca, type: 2}

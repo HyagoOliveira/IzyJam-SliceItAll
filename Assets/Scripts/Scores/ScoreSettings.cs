@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Izyplay.SliceItAll
+namespace Izyplay.SliceItAll.Scores
 {
     [CreateAssetMenu(fileName = "ScoreSettings", menuName = "Izyplay/ScoreSettings", order = 110)]
     public sealed class ScoreSettings : ScriptableObject

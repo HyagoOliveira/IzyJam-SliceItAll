@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Izyplay.SliceItAll.Scores;
 
 namespace Izyplay.SliceItAll.Levels
 {

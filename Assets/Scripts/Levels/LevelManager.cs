@@ -9,6 +9,8 @@ namespace Izyplay.SliceItAll.Levels
         [SerializeField] private LevelSettings settings;
         [SerializeField] private InputSettings inputSettings;
 
+        private void Start() => settings.Finish();
+
         private void OnEnable()
         {
             ListenForScreenTouch();

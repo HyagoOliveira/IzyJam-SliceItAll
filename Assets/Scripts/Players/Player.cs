@@ -7,6 +7,8 @@ namespace Izyplay.SliceItAll.Players
     {
         [SerializeField] private PlayerSettings settings;
 
+        [field: SerializeField] public Transform CameraFollow { get; private set; }
+
         private void Start() => settings.Initialize(this);
     }
 }

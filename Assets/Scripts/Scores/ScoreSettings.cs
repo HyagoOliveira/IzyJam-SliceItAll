@@ -23,7 +23,7 @@ namespace Izyplay.SliceItAll
 
         internal void Initialize() => Score = 0f;
 
-        public void AddScore(float value)
+        public void Add(float value)
         {
             Score += value;
             OnScoreIncreased?.Invoke(value);
@@ -31,9 +31,9 @@ namespace Izyplay.SliceItAll
 
         public void Multiply(int multiplier)
         {
-            var toAdd = Score - multiplier * Score;
-            toAdd = Mathf.Max(toAdd, 0f);
-            AddScore(toAdd);
+            multiplier = Mathf.Max(multiplier, 1);
+            var addition = Score * (multiplier - 1);
+            Add(addition);
         }
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 791494593134164079}
   - component: {fileID: 791494593134164065}
   - component: {fileID: 7776522685832927871}
+  - component: {fileID: 2550619810915959390}
   m_Layer: 8
   m_Name: BaseSliceableItem
   m_TagString: Untagged
@@ -58,7 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9514bab0bb17b4b8e0dce84d23ba9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 791494593134164079}
   whole: {fileID: 0}
   sliced: {fileID: 0}
 --- !u!114 &7776522685832927871
@@ -75,3 +75,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 533f19cd7cd32244abb1f03502556dca, type: 2}
   score: 10.5
+--- !u!114 &2550619810915959390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791494593134164078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409d124e4caaed74cbf21031258d153f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 791494593134164079}

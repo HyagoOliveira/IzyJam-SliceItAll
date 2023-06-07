@@ -3,7 +3,10 @@ guid: 90edc858ffaf6f348a16cb80c7302a88
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - detector: {instanceID: 0}
+  - slicerClips: {fileID: 11400000, guid: 92b32051c1c795642b959a2e6beec32b, type: 2}
+  - audioSource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -6,7 +6,7 @@ namespace Izyplay.SliceItAll.Scores
     [DisallowMultipleComponent]
     public sealed class SlaceableScoreMultiplier : AbstractSlaceableScore
     {
-        [SerializeField, Min(0)] private int multiplier = 1;
+        [SerializeField, Min(1F)] private float multiplier = 1F;
         [SerializeField] private TMP_Text multiplierText;
 
         private void Reset() => multiplierText = GetComponentInChildren<TMP_Text>();

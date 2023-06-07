@@ -29,10 +29,10 @@ namespace Izyplay.SliceItAll.Scores
             OnScoreIncreased?.Invoke(value);
         }
 
-        public void Multiply(int multiplier)
+        public void Multiply(float multiplier)
         {
-            multiplier = Mathf.Max(multiplier, 1);
-            var addition = Score * (multiplier - 1);
+            multiplier = Mathf.Max(multiplier - 1F, 1F);
+            var addition = Score * multiplier;
             Add(addition);
         }
     }

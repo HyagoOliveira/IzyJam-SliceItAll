@@ -19,5 +19,7 @@ namespace Izyplay.SliceItAll.Levels
         }
 
         public void Finish() => OnLevelFinished?.Invoke();
+
+        public void ResetLevel() { }
     }
 }

@@ -504,7 +504,7 @@ PrefabInstance:
     - target: {fileID: 2653797293286440432, guid: 010014aa68585284d8c15ff7cad416b5,
         type: 3}
       propertyPath: m_Name
-      value: Score
+      value: ScorePanel
       objectReference: {fileID: 0}
     - target: {fileID: 4223662919535241988, guid: 010014aa68585284d8c15ff7cad416b5,
         type: 3}

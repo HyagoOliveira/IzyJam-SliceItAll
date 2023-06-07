@@ -20,7 +20,11 @@ namespace Izyplay.SliceItAll.Levels
             OnLevelStarted?.Invoke();
         }
 
-        public void Finish() => OnLevelFinished?.Invoke();
+        public void Finish()
+        {
+            score.TrySaveHighestScore();
+            OnLevelFinished?.Invoke();
+        }
 
         public void ResetLevel() => SceneManager.LoadScene(sceneName);
     }

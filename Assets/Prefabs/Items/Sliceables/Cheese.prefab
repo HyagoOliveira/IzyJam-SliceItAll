@@ -110,6 +110,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese
       objectReference: {fileID: 0}
+    - target: {fileID: 791494593134164079, guid: 44e8f6e06951268478b453a632f1a6e0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 791494593134164079, guid: 44e8f6e06951268478b453a632f1a6e0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8f6e06951268478b453a632f1a6e0, type: 3}
 --- !u!4 &1740486788351274270 stripped

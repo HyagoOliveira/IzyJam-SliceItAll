@@ -16,7 +16,7 @@ namespace Izyplay.SliceItAll.Scores
         private void OnValidate()
         {
             if (multiplierText == null) return;
-            multiplierText.text = multiplier.ToString();
+            multiplierText.text = $"{multiplier}X";
         }
     }
 }

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: LevelSettings
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: 533f19cd7cd32244abb1f03502556dca, type: 2}
+  sceneName: MainLevel

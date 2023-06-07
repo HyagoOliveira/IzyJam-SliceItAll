@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Izyplay.SliceItAll.Scores;
+using UnityEngine.SceneManagement;
 
 namespace Izyplay.SliceItAll.Levels
 {
@@ -8,6 +9,7 @@ namespace Izyplay.SliceItAll.Levels
     public sealed class LevelSettings : ScriptableObject
     {
         [SerializeField] private ScoreSettings score;
+        [SerializeField] private string sceneName;
 
         public event Action OnLevelStarted;
         public event Action OnLevelFinished;
@@ -20,6 +22,6 @@ namespace Izyplay.SliceItAll.Levels
 
         public void Finish() => OnLevelFinished?.Invoke();
 
-        public void ResetLevel() { }
+        public void ResetLevel() => SceneManager.LoadScene(sceneName);
     }
 }

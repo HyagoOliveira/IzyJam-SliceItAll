@@ -5,35 +5,15 @@ using Izyplay.SliceItAll.Scores;
 namespace Izyplay.SliceItAll.UI
 {
     [DisallowMultipleComponent]
-    [RequireComponent(typeof(Animation))]
     public sealed class Score : MonoBehaviour
     {
         [SerializeField] private ScoreSettings settings;
-        [SerializeField] private Animation anim;
-        [SerializeField] private TMP_Text current;
-        [SerializeField] private TMP_Text addition;
-        [SerializeField] private string format = "F2";
+        [SerializeField] private TMP_Text value;
 
-        private void Reset() => anim = GetComponent<Animation>();
+        private void Reset() => value = GetComponent<TMP_Text>();
+        private void OnEnable() => settings.OnScoreChanged += HandleScoreChanged;
+        private void OnDisable() => settings.OnScoreChanged -= HandleScoreChanged;
 
-        private void OnEnable()
-        {
-            settings.OnScoreChanged += HandleScoreChanged;
-            settings.OnScoreIncreased += HandleScoreIncreased;
-        }
-
-        private void OnDisable()
-        {
-            settings.OnScoreChanged -= HandleScoreChanged;
-            settings.OnScoreIncreased -= HandleScoreIncreased;
-        }
-
-        private void HandleScoreChanged(float score) => current.text = score.ToString(format);
-
-        private void HandleScoreIncreased(float increase)
-        {
-            addition.text = $"+{increase:F2}";
-            anim.Play();
-        }
+        private void HandleScoreChanged(float score) => value.text = score.ToString();
     }
 }

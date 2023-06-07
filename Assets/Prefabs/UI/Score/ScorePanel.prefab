@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7247816489846528899}
   - component: {fileID: 6784330703420334635}
   - component: {fileID: 7117876272149747225}
+  - component: {fileID: 6982657876556499594}
   m_Layer: 5
   m_Name: Current
   m_TagString: Untagged
@@ -134,6 +135,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6982657876556499594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335443823751819411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc50b6587bdde4438a49cc964a314e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 533f19cd7cd32244abb1f03502556dca, type: 2}
+  value: {fileID: 7117876272149747225}
 --- !u!1 &2653797293286440432
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +162,7 @@ GameObject:
   - component: {fileID: 3020416236098934432}
   - component: {fileID: 2832256433974407146}
   - component: {fileID: 994240893408829996}
-  - component: {fileID: 8102275178005654338}
+  - component: {fileID: 8095830893296520826}
   m_Layer: 5
   m_Name: ScorePanel
   m_TagString: Untagged
@@ -251,7 +266,7 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &8102275178005654338
+--- !u!114 &8095830893296520826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,14 +275,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2653797293286440432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc50b6587bdde4438a49cc964a314e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f9b0344a13ffb24789409a0790aab09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 533f19cd7cd32244abb1f03502556dca, type: 2}
   anim: {fileID: 994240893408829996}
-  current: {fileID: 7117876272149747225}
-  addition: {fileID: 5968649845265958002}
-  format: F2
+  value: {fileID: 5968649845265958002}
 --- !u!1 &5704675343611709311
 GameObject:
   m_ObjectHideFlags: 0

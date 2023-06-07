@@ -8,6 +8,7 @@ namespace Izyplay.SliceItAll.Scores
     {
         public event Action<float> OnScoreIncreased;
         public event Action<float> OnScoreChanged;
+        public event Action OnHighestScoreReached;
 
         public float Score
         {
@@ -20,6 +21,9 @@ namespace Izyplay.SliceItAll.Scores
         }
 
         private float score;
+
+        private const string highestScoreKey = "HighestScore";
+
 
         internal void Initialize() => Score = 0f;
 
@@ -34,6 +38,26 @@ namespace Izyplay.SliceItAll.Scores
             multiplier = Mathf.Max(multiplier - 1F, 1F);
             var addition = Score * multiplier;
             Add(addition);
+        }
+
+        public void TrySaveHighestScore()
+        {
+            var highestScore = PlayerPrefs.GetFloat(highestScoreKey, defaultValue: 0F);
+            var isNewHighestScore = Score > highestScore;
+
+            if (!isNewHighestScore) return;
+
+            PlayerPrefs.SetFloat(highestScoreKey, Score);
+            PlayerPrefs.Save();
+
+            OnHighestScoreReached?.Invoke();
+        }
+
+        [ContextMenu("Erase Highest Score")]
+        private void EraseHighestScore()
+        {
+            PlayerPrefs.DeleteKey(highestScoreKey);
+            Debug.Log("Highest Score was erased");
         }
     }
 }

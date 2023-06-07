@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b808fef8d03bd74a82c1357e869de06, type: 3}
+  m_Name: SlicerAudioClips
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3e68ce51cb4a4fd49b2f22a008f0c59e, type: 3}
+  - {fileID: 8300000, guid: e5fcfab805065344295ae474c1dfd3de, type: 3}
+  - {fileID: 8300000, guid: 3e0af7d667b2f14448aa415526a155b2, type: 3}

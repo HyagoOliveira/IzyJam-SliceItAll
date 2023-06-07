@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: 82c69a9a8a6b3ab4691ffd93ea14da5f, type: 2}
+  levelSettings: {fileID: 11400000, guid: e649a67b57d5a6b4399eb3cf2e652f5f, type: 2}
   motor: {fileID: 2745946955182681657}
 --- !u!114 &2745946955182681657
 MonoBehaviour:

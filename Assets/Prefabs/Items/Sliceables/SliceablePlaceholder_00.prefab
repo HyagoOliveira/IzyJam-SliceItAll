@@ -91,7 +91,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e5fc7890ca0fdeb438b64cc5e361fbd4, type: 2}
+  - {fileID: 2100000, guid: 2c7e19fb5d5aa5a4881341a737ae4fa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -172,7 +172,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e5fc7890ca0fdeb438b64cc5e361fbd4, type: 2}
+  - {fileID: 2100000, guid: 2c7e19fb5d5aa5a4881341a737ae4fa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -253,7 +253,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e5fc7890ca0fdeb438b64cc5e361fbd4, type: 2}
+  - {fileID: 2100000, guid: 2c7e19fb5d5aa5a4881341a737ae4fa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -350,7 +350,7 @@ PrefabInstance:
     - target: {fileID: 791494593134164078, guid: 44e8f6e06951268478b453a632f1a6e0,
         type: 3}
       propertyPath: m_Name
-      value: SliceablePlaceholder
+      value: SliceablePlaceholder_00
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e8f6e06951268478b453a632f1a6e0, type: 3}

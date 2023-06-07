@@ -1,3 +1,4 @@
+using Izyplay.SliceItAll.Levels;
 using UnityEngine;
 
 namespace Izyplay.SliceItAll.Scores
@@ -5,6 +6,8 @@ namespace Izyplay.SliceItAll.Scores
     [DisallowMultipleComponent]
     public sealed class ScoreMultiplierTower : MonoBehaviour
     {
+        [SerializeField] private LevelSettings levelSettings;
+
         private IEnable[] enables;
         private ISlaceable[] slaceables;
 
@@ -30,7 +33,11 @@ namespace Izyplay.SliceItAll.Scores
             }
         }
 
-        private void HandleOnSliced() => SetEnables(false);
+        private void HandleOnSliced()
+        {
+            SetEnables(false);
+            levelSettings.Finish();
+        }
 
         private void SetEnables(bool enabled)
         {

@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 6593112194152880323}
   - component: {fileID: 2745946955182681657}
   - component: {fileID: 8635075967173548052}
+  - component: {fileID: 2671986511076633245}
   m_Layer: 6
   m_Name: Knife
   m_TagString: Untagged
@@ -495,3 +496,18 @@ MonoBehaviour:
   detector: {fileID: 1486671297607485539}
   slicerClips: {fileID: 11400000, guid: 92b32051c1c795642b959a2e6beec32b, type: 2}
   audioSource: {fileID: 5183791072682256054}
+--- !u!114 &2671986511076633245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836274837335922639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f853437487bdd499da4f43fc8376a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 5183791072682256054}
+  audioCollection: {fileID: 11400000, guid: 92b32051c1c795642b959a2e6beec32b, type: 2}
+  detector: {fileID: 1486671297607485539}

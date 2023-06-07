@@ -8,9 +8,9 @@ namespace Izyplay.SliceItAll.UI
     public sealed class CanvasManager : MonoBehaviour
     {
         [SerializeField] private LevelSettings levelSettings;
-        [SerializeField] private GameObject score;
-        [SerializeField] private GameObject startMessage;
-        [SerializeField] private GameObject finalPanel;
+        [SerializeField] private Canvas score;
+        [SerializeField] private Canvas startMessage;
+        [SerializeField] private Canvas finalPanel;
 
         [Header("Timers")]
         [SerializeField, Min(0f)] private float timeUntilShowFinalPanel = 2f;
@@ -30,22 +30,23 @@ namespace Izyplay.SliceItAll.UI
 
         private void HandleLevelStarted()
         {
-            score.SetActive(true);
-            startMessage.SetActive(false);
-            finalPanel.SetActive(false);
+            score.enabled = true;
+            startMessage.enabled = false;
+            finalPanel.enabled = false;
         }
 
         private void HandleLevelFinished()
         {
-            score.SetActive(false);
-            startMessage.SetActive(false);
+            startMessage.enabled = false;
             StartCoroutine(FinalPanelCoroutine());
         }
 
         private IEnumerator FinalPanelCoroutine()
         {
             yield return new WaitForSeconds(timeUntilShowFinalPanel);
-            finalPanel.SetActive(true);
+
+            score.enabled = false;
+            finalPanel.enabled = true;
 
             yield return new WaitForSeconds(timeShowingFinalPanel);
             levelSettings.ResetLevel();

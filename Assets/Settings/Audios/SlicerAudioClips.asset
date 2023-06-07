@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SlicerAudioClips
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 3e68ce51cb4a4fd49b2f22a008f0c59e, type: 3}
-  - {fileID: 8300000, guid: e5fcfab805065344295ae474c1dfd3de, type: 3}
-  - {fileID: 8300000, guid: 3e0af7d667b2f14448aa415526a155b2, type: 3}
+  - {fileID: 8300000, guid: 2bc6982ab4c3de64b9aa9b5b043078b5, type: 3}
+  - {fileID: 8300000, guid: 2fd91c8c38a55454e90006688530c6fd, type: 3}
+  - {fileID: 8300000, guid: 6c8781422095ffc49a1763ba90ce468f, type: 3}

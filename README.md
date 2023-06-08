@@ -1,14 +1,17 @@
 # IzyJam-SliceItAll
-Clone game for Slice It All
-Unity version: **2020.3.25f1**
 
-**Gameplay**: Tap to flip the knife and slice amazing obstacles in juiciest way! Cut or slice everything and become slice master!
+* Clone game for Slice It All
+* Unity version: **2020.3.25f1**
+
+Tap to flip the knife and slice amazing obstacles in juiciest way! Cut or slice everything and become slice master!
+
+## Android Build
 
 Download the latest **Android** build using the following QR Code:
 
 ![Android Build](/qrcode-android-build.png)
 
-## GameLoop
+## Game Loop
 
 1. Knife starts stuck on the floor;
 2. A message "Touch to flip" is displayed;
